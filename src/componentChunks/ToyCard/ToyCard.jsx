@@ -4,17 +4,17 @@ const ToyCard = ({ item, handleDelete, showDeleteButton }) => {
   // console.log(item)
   const { _id, name, photo, price, rating } = item;
   return (
-    <div className="card w-96 bg-base-100 shadow-xl">
+    <div className="card border-2 border-violet-500  w-60 md:w-72 max-h-[400px] bg-base-100 shadow-xl p-5 ">
       <figure>
-        <img src={photo} alt="toyImage" />
+        <img src={photo} className="w-44 md:w-56" alt="toyImage" />
       </figure>
       <div className="card-body">
         <h2 className="card-title">{name}</h2>
-        <p>Price: {price}</p>
-        <p>Rating: {rating}</p>
+        <p><span className="font-bold">Price:</span> {price} $</p>
+        <p><span className="font-bold">Rating:</span> {rating} </p>
         <div className="flex justify-start gap-5">
           <Link to={`/toy/${_id}`} className="card-actions justify-center">
-            <button className="btn btn-primary ">View Details</button>
+            <button className="btn btn-primary btn-sm md:btn-md ">View Details</button>
           </Link>
           <div>
             {showDeleteButton && (

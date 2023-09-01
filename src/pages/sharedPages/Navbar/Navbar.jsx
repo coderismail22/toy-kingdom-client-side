@@ -11,7 +11,7 @@ const Navbar = () => {
         {/* <img className="w-64" src={logo} alt="logo" /> */}
         <a
           href="/home"
-          className="font-bold  text-2xl no-underline text-primary hover:text-blue-dark"
+          className="font-bold uppercase overline text-2xl  text-primary hover:text-blue-dark"
         >
           Toy Kingdom
         </a>

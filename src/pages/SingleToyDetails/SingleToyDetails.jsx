@@ -30,16 +30,16 @@ const SingleToyDetails = () => {
       <div className="hero-content flex-col lg:flex-row">
         <img
           src={photo}
-          className="max-w-sm rounded-lg shadow-2xl"
+          className="w-48 md:w-80 rounded-lg shadow-2xl"
         />
         <div className="flex flex-col gap-5">
-          <p className="text-5xl font-bold">TOY: {name}</p>
-          <p>SELLER: {seller}</p>
-          <p>SELLERMAIL: {sellerMail}</p>
-          <p>PRICE: {price}</p>
-          <p>RATING: {rating}</p>
-          <p>QUANTITY: {quantity}</p>
-          <p>DESCRIPTION: {description}</p>
+          <p className="text-5xl font-bold">{name}</p>
+          <p><span className="font-bold">SELLER: </span>{seller}</p>
+          <p><span className="font-bold">SELLERMAIL: </span>{sellerMail}</p>
+          <p><span className="font-bold">PRICE: </span>{price}</p>
+          <p><span className="font-bold">RATING: </span>{rating}</p>
+          <p><span className="font-bold">QUANTITY: </span>{quantity}</p>
+          <p><span className="font-bold">DESCRIPTION: </span>{description}</p>
         </div>
       </div>
     </div>

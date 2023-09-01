@@ -4,6 +4,11 @@ import Gallery from "../Gallery/Gallery";
 import Manufacturers from "../Manufacturers/Manufacturers";
 import ShopByCategory from "../ShopByCategory/ShopByCategory";
 import Trending from "../Trending/Trending";
+import ParticlesComponent from "../../../componentChunks/ParticlesComponent/ParticlesComponent";
+import Speciality from "../Speciality/Speciality";
+import Testimonial from "../Testimonial/Testimonial";
+import Contact from "../Contact/Contact";
+import Featured from "../Featured/Featured";
 
 const Home = () => {
   return (
@@ -14,8 +19,13 @@ const Home = () => {
       <Banner></Banner>
       <Gallery></Gallery>
       <ShopByCategory></ShopByCategory>
-      <Trending></Trending>
+      <Speciality></Speciality>
+      <Featured></Featured>
+      <Testimonial></Testimonial>
       <Manufacturers></Manufacturers>
+      <Contact></Contact>
+
+      {/* <ParticlesComponent></ParticlesComponent> */}
     </div>
   );
 };

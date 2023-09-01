@@ -14,9 +14,9 @@ const ToyCardSection = ({ category }) => {
       });
   }, [category]);
   if (loading) {
-    return <span className="loading loading-spinner text-primary"></span>;
+    return <span className="loading loading-spinner text-primary flex flex-col items-center"></span>;
   }
-  return <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-5 p-5">{data.map((item) => <ToyCard key={item._id} item={item}></ToyCard>)}</div>
+  return <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 gap-5 p-5 place-items-center">{data.map((item) => <ToyCard key={item._id} item={item}></ToyCard>)}</div>
 };
 
 export default ToyCardSection;
